@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+                 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                 <link rel="stylesheet" type="text/css" href="book.css">
+                 <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
+                 <script src="https://kit.fontawesome.com/36743d6994.js" crossorigin="anonymous"></script>
+        <script>
+            function back()
+{
+    window.open("11.html");
+}
+function checkforblank()
+{
+    if(document.getElementById('q').value=="")
+    {
+        document.getElementById("message").innerHTML="** Details cannot be empty";
+        return false;
+    }
+    if(document.getElementById('date').value=="")
+    {
+        document.getElementById("message").innerHTML="** Details cannot be empty";
+        return false;
+    }
+    if(document.getElementById('select').value=="")
+    {
+        document.getElementById("message").innerHTML="** Details cannot be empty";
+        return false;
+    }
+    else
+    {
+        window.open("payment.html");
+    }
+}
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="inner_header">
+                <div class="logo"><i class="fa fa-home" aria-hidden="true" style="font-size:40px"></i></div>
+                <div class="logo"><a href="index.html">Home</a></div> 
+                <div class="logo"><a href="11.html">Explore</a></div>
+                <div class="logo"><a href="help.html">Help</a></div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 style="font-size:60px; font-family:aria;text-align:center;">Start Booking!!</h3>
+            <form action="/action_page.php">
+                <label for="Quantity" style="font-size:40px; font-family:aria;"><b>Enter Quantity:</b></label>
+                <input type="text" id="q"/>
+            </br>
+                <label for="Date" style="font-size:40px; font-family:aria;"><b>Date of Booking:</b></label>
+                <input type="date" id="date" name="date">
+        </br>
+                <label for="select" style="font-size:40px; font-family:aria;"><b>Duration:</b></label>
+                <select id="select">
+                    <option>--Select Duration--</option>
+                    <option>1-2 months</option>
+                    <option>2-3 months</option>
+                    <option>3-4 months</option>
+                    <option>4-5 months</option>
+                    <option>upto 3 months</option>
+                    <option>upto 6 months</option>
+                    <option>6 months-1 year</option>
+                    <option>Upto 1 year</option>
+                </select>
+              </form> </br>
+            </div>
+            <div class="main" >
+            <input class="button" type="submit" value="back" onclick="back()"/>
+        <input class="button" type="submit" value="proceed to pay" onclick="checkforblank()"/>
+        <p id="message"></p>
+    </div>
+    </body>
+</html>

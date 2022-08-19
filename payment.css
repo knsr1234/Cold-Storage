@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.8;
+    background-color:antiquewhite;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color:#ededed;
+   }
+.navbar{
+    background-color:rgba(0,0,0,0.8);
+    color:#fff;
+    border-color: #080808;
+    min-height: 70px;
+    border: 1px solid transparent;
+   }
+.inner_header{
+    width:80%;
+    margin:auto;
+   }
+.header_link{
+    float:right;
+    font-size:40px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size:16px;
+    font-weight: bold;
+   }
+.logo{
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+   }
+.con{
+    padding:0px 50px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color:brown;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  .button {
+    background-color: brown;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+.button:hover {
+    opacity: 0.8;
+  }

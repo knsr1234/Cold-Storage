@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.cotainer{
+    width:100vw;
+    padding:0px;
+}
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color:#ededed;
+   }
+.navbar{
+    background-color:rgba(0,0,0,0.8);
+    color:#fff;
+    border-color: #080808;
+    min-height: 70px;
+    border: 1px solid transparent;
+   }
+.inner_header{
+    width:80%;
+    margin:auto;
+   }
+.header_link{
+    float:right;
+    font-size:14px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size:16px;
+    font-weight: bold;
+   }
+.logo{
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+   }
+
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(245,245,220,0.2),rgba(245,245,220,0.1)),
+    url('images/background\ pic.png') center/cover no-repeat fixed;
+    margin-top: auto;
+}
+.inner-banner-image{
+    padding-top: 12%;
+    width:80%;
+    margin:auto;
+   }
+.banner-content{
+    position: relative;
+    padding-top: 6%;   
+    padding-bottom: 6%;
+ 
+    overflow:hidden;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+    color:#ededed
+   }
+  .about{
+      padding:5%;
+      margin:auto;
+      
+  } 
+  .matter{
+      float:left;
+  }
+  p{
+      font-size: medium;
+  }
